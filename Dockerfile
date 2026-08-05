@@ -1,6 +1,10 @@
 ARG BASE_TAG=latest
 FROM ghcr.io/ucsd-ets/datascience-notebook:${BASE_TAG}
 
+# Metadata
+LABEL maintainer="UC San Diego Research IT Services Ian Kaufman <ikaufman@ucsd.edu>"
+LABEL description="Docker image based on latest UCSD ETS datascience-notebook adding in CUDA and VirtualGL"
+
 USER root
 
 # tensorflow, pytorch stable versions
